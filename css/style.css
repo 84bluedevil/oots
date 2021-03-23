@@ -1,0 +1,195 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+#pageWrapper {
+  box-sizing: border-box;
+  padding: 75px 0 50px 0;
+}
+#brandLogo {
+  font-weight: 400;
+  font-family: "Poppins", sans-serif;
+  color: rgb(204, 179, 77);
+}
+
+.aboutUs {
+  animation-duration: 2s;
+}
+#bottomSocial {
+  height: 100px;
+  margin: 10px 0;
+  display: flex;
+  justify-content: space-between;
+  transform: translateZ(20px) perspective(300px);
+}
+
+#mainImg {
+  margin: 0;
+  padding: 0;
+}
+
+#mHeading {
+  margin-bottom: 20px;
+}
+
+#colorText {
+  color: aqua;
+  text-decoration: underline;
+}
+
+#menu {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  text-transform: none;
+  transform: translateZ(30px) perspective(250px);
+}
+
+.largeText {
+  font-size: 55px;
+}
+
+#menu li a:link {
+  text-decoration: none;
+  text-transform: none;
+  color: aqua;
+  font-size: 50px;
+  margin: 0;
+}
+
+a:link {
+  color: aqua;
+}
+
+.far {
+  font-size: 100px;
+  animation: animate__animated animate__pulse;
+  animation-duration: 2s;
+  text-shadow: 4px 2px rgb(0, 0, 0);
+  transform: translateZ(-10px) perspective(100px);
+}
+
+.fab {
+  font-size: 100px;
+  animation: animate__animated;
+  animation: animate__pulse;
+  animation-duration: 2s;
+  text-shadow: 4px 2px rgb(0, 0, 0);
+}
+
+#menu li a:link:hover {
+  color: rgb(204, 179, 77);
+  font-size: 45px;
+  position: relative;
+}
+
+#menu li a:link:selection {
+  color: black;
+  background-color: rgba(221, 255, 27, 0.808);
+}
+
+#aboutUs {
+  color: rgb(204, 179, 77);
+  background-color: rgba(41, 28, 28, 0.69);
+  box-sizing: border-box;
+  padding: 20px 40px;
+  border-radius: 50px;
+  width: 1100px;
+  margin: 10px auto;
+  position: relative;
+  z-index: 4;
+  font-family: "Cabin", sans-serif;
+  font-weight: 900;
+  font-size: 20px;
+  box-shadow: 15px 10px 20px rgb(41, 28, 28);
+  transform-style: preserve-3d;
+}
+
+#background {
+  width: 1400px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  object-fit: cover;
+  z-index: 0;
+  width: 100%;
+  opacity: 0.8;
+}
+
+#nav {
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  margin-bottom: 20px;
+}
+
+#emailInput {
+  height: 25px;
+  width: 100px;
+}
+
+#paragraph {
+  margin: 80px 0 20px 0;
+  transform: translateZ(100px) perspective(500px);
+  position: relative;
+}
+
+#paragraph p {
+  font-weight: 400;
+}
+
+#aboutUs p::selection {
+  color: black;
+  background-color: rgba(221, 255, 27, 0.808);
+}
+
+#aboutUs h1::selection {
+  color: black;
+  background-color: rgba(221, 255, 27, 0.808);
+}
+#aboutUs span::selection {
+  color: black;
+  background-color: rgba(221, 255, 27, 0.808);
+}
+
+.box {
+  padding: 20px;
+}
+
+#aboutUs h1 {
+  margin-left: 40px;
+}
+
+.columnCenter {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#aboutUs p {
+  margin-left: 40px;
+  line-height: 35px;
+  word-spacing: 10px;
+  padding: 0 25px;
+}
+
+.centeredText {
+  text-align: center;
+}
+
+.formLength {
+  width: 800px;
+}
+
+audio {
+  opacity: 0.001;
+}
+
+#audioBtn {
+  margin: 0;
+}
+
+.menuItem {
+  text-shadow: 4px 2px rgb(0, 0, 0);
+}
