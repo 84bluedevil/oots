@@ -31,15 +31,15 @@
             <div id="paragraph" class="columnCenter">
                 <h1 id="mHeading" class="centeredText">Contact Me!</h1>
                 <div class="mb-3">
-                    <label for="exampleFormControlInput1" class="form-label">Email address</label>
-                    <input type="email" class="form-control formLength" id="exampleFormControlInput1" placeholder="name@example.com">
+                    <label for="exampleFormControlInput1" class="form-label">Email address <i id="emailError" class="fas fa-exclamation hide error"></i></label>
+                    <input type="email" class="form-control formLength emailInput" id="exampleFormControlInput1" placeholder="name@example.com">
                   </div>
                   <div class="mb-3">
-                    <label for="exampleFormControlTextarea1" class="form-label">Let me know what I can do for you!</label>
-                    <textarea class="form-control formLength" id="exampleFormControlTextarea1" rows="3"></textarea>
+                    <label for="exampleFormControlTextarea1" class="form-label">Let me know what I can do for you! <i id="messageError" class="fas fa-exclamation hide error"></i></label>
+                    <textarea class="form-control formLength messageInput" id="exampleFormControlTextarea1" rows="3" placeholder="Please use at least 25 characters..."></textarea>
                   </div>
                   <div class="d-grid gap-2 col-6 mx-auto">
-                    <button class="btn btn-primary" type="button">Send Me A Message!</button>
+                    <button id="msgBtn" class="btn btn-primary" type="button">Send Me A Message!</button>
                     <button id="audioBtn" class="btn btn-primary" type="button">Be Happy!</button>
                   </div>
                   <audio id="audioOne" src="../audio/behappy.mp3"></audio>
