@@ -12,35 +12,44 @@
 <link href="https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400;0,500;1,700&display=swap" rel="stylesheet">
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script> 
+
 <script src='https://api.mapbox.com/mapbox-gl-js/v2.2.0/mapbox-gl.js'></script>
 <link href='https://api.mapbox.com/mapbox-gl-js/v2.2.0/mapbox-gl.css' rel='stylesheet' />
-    <link rel="stylesheet" href="css/style.css" />
+
+    <link rel="stylesheet" href="../css/style.css" />
     <title>Portfolio</title>
 </head>
 <body>
     <div id="pageWrapper" class="container-fluid">
         
         <div id="background">
-            <video src="imgs/video.mp4#t=10,20,5" preload="metadata" autoplay muted loop></video>
+            <video src="../imgs/video.mp4#t=10,20,5" preload="metadata" autoplay muted loop></video>
         </div>
 
-</div>
+
         <div data-tilt data-tilt-glare data-tilt-max-glare="0.2" data-tilt-reverse="true" data-tilt-scale="1.1" id="aboutUs" class="aboutUs container" data-tilt>
             <header>
                 <ul id="menu">
+                    <li class="menuItem"><a class="navBtn" href="../pages/aboutme.html">Contact</a></li>
                     <li class="menuItem"><a class="navBtn" href="#">Home</a></li>
-                    <li class="menuItem"><a class="navBtn" href="pages/aboutme.html">Contact</a></li>
-
-                    <li class="menuItem"><a class="navBtn" href="pages/contact.html">Projects</a></li>
-                    <li class="menuItem"><a class="navBtn" href="pages/tracker.html">Travel History</a></li>
+                    <li class="menuItem"><a class="navBtn" href="../pages/contact.html">Projects</a></li>
+                    <li class="menuItem"><a class="navBtn" href="#">Tracker!</a></li>
                 </ul>
             </header>
             <hr />
             <div  id="paragraph" class="container">
-                <h1 id="mHeading" ><span class="largeText">Charles Robinson</span> <br /> <span id="colorText">FULL STACK</span> Web Development Student</h1>
-                
-                <div id="picWrapper"></div>
-                <p>I am a full stack web developer from Birmingham, Al. I am fluent in <span class="boldUppercase">HTML</span>, <span class="boldUppercase">CSS</span>, <span class="boldUppercase">Javascript</span>, <span class="boldUppercase">PHP</span>, and always expanding. Please let me know how I can help you on my <a href="pages/aboutme.html">Contact</a> page! <br /> I enjoy traveling and hiking in my free time, i'm also into fitness and gardening. I hope to further my knowledge in web development and also expand to app dev with solidity.</p>
+                <h2>Check out this hike tracker I made to help me keep up with where i've been recently. Scroll around the terrain map!</h2>
+                <div id='map' style='width: 850px; height: 500px; border-radius: 20px;'></div>
+                <script>
+                mapboxgl.accessToken = 'pk.eyJ1IjoiYXVzdGlucm9iaW5zb24yMDI0IiwiYSI6ImNrbXZkNXdmcDA0MjEycG8zamtsaG16OGUifQ.rRMD7VpyS6xl9oQqGLZ9JQ';
+                var map = new mapboxgl.Map({
+                container: 'map',
+                style: 'mapbox://styles/austinrobinson2024/ckmy12vbv1dxe17mfzzcjrt7v',
+                center: [-83.612372, 35.386355], 
+                zoom: 9 
+                });
+                </script>
+
             </div>
             <div id="bottomSocial">
                 <div class="box"><a href="http://twitter.com"><i class="animate__animated fab fa-twitter-square animate__pulse"></i></a></div>
@@ -49,10 +58,10 @@
             </div>
         </div>
     </div>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script> 
-    <script src="js/query.js"></script>
-    <script src="js/tilt.js"></script>
-    <script src="js/main.js"></script> 
+
+    <script src="../js/query.js"></script>
+    <script src="../js/tilt.js"></script>
+    <script src="../js/main.js"></script> 
     
 
 </body>

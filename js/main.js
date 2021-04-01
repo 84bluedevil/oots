@@ -28,7 +28,9 @@ musicBtn.onclick = function playMusic() {
     //videoBackground.setAttribute('id', 'backgroundVideo');
     newMusic.currentTime=37.9;
     newMusic.volume = .2;
+    $('#mHeading').css({"font-size": 75});
     newMusic.play();
+    //assigns random color to the buttons when music is playing
     const randomColor = () => '#' + Math.random().toString(16).substr(-6);
     const changeColor = () => {
         messageBtn.style.backgroundColor = randomColor();
@@ -51,12 +53,31 @@ messageBtn.onclick = () => {
     if(emailBox.value.length > 4){
         let userEmail = emailBox.value;
     }else{
+        $('#mHeading').css({"font-size": 75});
         messageError.classList.add('display');
         emailError.classList.add('display');
         messageBtn.classList.add('btn-warning');
     }
 
 };
+
+
+
+
+
+
+
+mapboxgl.accessToken = '<pk.eyJ1IjoiYXVzdGlucm9iaW5zb24yMDI0IiwiYSI6ImNrbXZkNXdmcDA0MjEycG8zamtsaG16OGUifQ.rRMD7VpyS6xl9oQqGLZ9JQ>';
+var map = new mapboxgl.Map({
+container: 'map', // container ID
+style: 'mapbox://styles/austinrobinson2024/ckmy12vbv1dxe17mfzzcjrt7v', // style URL
+center: [-83.612372, 35.386355], // starting position [lng, lat]
+zoom: 9 // starting zoom
+});
+
+var map = L.mapbox.map('map')
+    .setView([-83.612372, 35.386355], 9)
+    .addLayer(L.mapbox.styleLayer('mapbox://styles/austinrobinson2024/ckmy12vbv1dxe17mfzzcjrt7v'));
 
 
 
