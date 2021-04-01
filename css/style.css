@@ -7,6 +7,33 @@
   box-sizing: border-box;
   padding: 75px 0 50px 0;
 }
+
+#bioWrapper {
+  position: relative;
+  margin: 0 auto;
+  height: 500px;
+  width: 750px;
+  overflow-y: auto;
+  display: flex;
+  justify-content: space-around;
+}
+
+.projects {
+  border: 1px solid blue;
+  height: 100px;
+  width: 400px;
+}
+
+.projectName {
+  border: 1px solid blue;
+  height: 100px;
+  width: 300px;
+}
+
+body {
+  position: relative;
+}
+
 #brandLogo {
   font-weight: 400;
   font-family: "Poppins", sans-serif;
@@ -16,6 +43,7 @@
 .aboutUs {
   animation-duration: 2s;
 }
+
 #bottomSocial {
   height: 100px;
   margin: 10px 0;
@@ -70,10 +98,21 @@ a:link {
   transform: translateZ(-10px) perspective(100px);
 }
 
+#hiddenMenuBtn{
+  position: absolute;
+  top:10px;
+  left:10px;
+  z-index: 89;
+}
+
+.icon {
+  transition: background 0.5s;
+}
+
 .fab {
   font-size: 100px;
-  animation: animate__animated;
-  animation: animate__pulse;
+  animation: animate__animated animate__pulse;;
+  animation: 
   animation-duration: 2s;
   text-shadow: 4px 2px rgb(0, 0, 0);
 }
@@ -120,6 +159,30 @@ a:link {
 .boldUppercase {
   text-transform: uppercase;
   font-weight: 700;
+}
+
+.hide {
+  display: none;
+}
+
+.btn {
+  margin: 10px 0;
+}
+
+#msgBtn text {
+  transform: translateZ(300px) perspective(500px);
+}
+
+.displayOne {
+  background-color: rgb(196, 255, 33);
+}
+
+.display {
+  display: inline;
+  color: rgb(196, 255, 33);
+  font-size: 30px;
+  font-weight: bolder;
+  margin: 0 20px;
 }
 
 #backgroundVideo {
@@ -205,6 +268,10 @@ audio {
 
 #audioBtn {
   margin: 0;
+}
+
+.audioParty {
+  transition: background 0.5s;
 }
 
 .menuItem {

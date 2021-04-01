@@ -1,6 +1,7 @@
 const musicBtn = document.querySelector('#audioBtn');
 const messageBtn = document.querySelector('#msgBtn');
 
+
 // Div Tilt
 $('document').ready(() => {
 
@@ -20,6 +21,7 @@ $('document').ready(() => {
 
 //plays sound & changes background refresh to exit
 musicBtn.onclick = function playMusic() {
+    let mainDiv = document.querySelectorAll('.icon a:link');
     let newMusic = document.querySelector('#audioOne');
     let videoBackground = document.querySelector('#backgroundVideo');
     videoBackground.setAttribute('src', '../imgs/video1.mp4');
@@ -27,6 +29,16 @@ musicBtn.onclick = function playMusic() {
     newMusic.currentTime=37.9;
     newMusic.volume = .2;
     newMusic.play();
+    const randomColor = () => '#' + Math.random().toString(16).substr(-6);
+    const changeColor = () => {
+        messageBtn.style.backgroundColor = randomColor();
+        musicBtn.style.backgroundColor = randomColor();
+        mainDiv.style.backgroundColor = randomColor();
+    }; 
+    setInterval(() => {
+        changeColor()
+      }, 500)
+
 
 };
 
@@ -34,15 +46,18 @@ musicBtn.onclick = function playMusic() {
 messageBtn.onclick = () => {
     const emailBox = document.querySelector('.emailInput');
     const messageBox = document.querySelector('.messageInput');
+    const emailError = document.querySelector('#emailError');
+    const messageError = document.querySelector('#messageError');
     if(emailBox.value.length > 4){
         let userEmail = emailBox.value;
     }else{
-        alert('Email Error');
-
+        messageError.classList.add('display');
+        emailError.classList.add('display');
+        messageBtn.classList.add('btn-warning');
     }
-    if(messageBox.value.length < 25){
-        let userMessage = messageBox.value;
-    }else{
 
-    }
 };
+
+
+
+
