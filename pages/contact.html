@@ -23,36 +23,34 @@
         <div id="aboutUs" class="aboutUs" data-tilt>
             <header>
                 <ul id="menu">
-                    <li class="menuItem"><a class="navBtn" href="../pages/aboutme.html">Contact</a></li>
-                    <li class="menuItem"><a class="navBtn" href="../index.html" >Home</a></li>
-                    <li class="menuItem"><a class="navBtn" href="../pages/contact.html">Projects</a></li>
-                    <li class="menuItem"><a class="navBtn" href="../pages/tracker.html">Tracker!</a></li>
+                    <li class="menuItem"><a class="navBtn" href="../index.php" >Home</a></li>
+                    <li class="menuItem"><a class="navBtn" href="../pages/contactForm.php">Contact</a></li>
+                    <li class="menuItem"><a class="navBtn" href="#">Projects</a></li>
+                    <li class="menuItem"><a class="navBtn" href="../pages/tracker.html">Hike Tracker!</a></li>
                 </ul>
             </header>
             <div id="paragraph">
-                <div id="bioWrapper">
-                    <div id="projectPic">
-                        <div class="projectPic"><img src="https://source.unsplash.com/random/100x150" alt=""></div>
-                        <div class="projectPic"><img src="https://source.unsplash.com/random/100x151" alt=""></div>
-                        <div class="projectPic"><img src="https://source.unsplash.com/random/100x152" alt=""></div>
-                        <div class="projectPic"><img src="https://source.unsplash.com/random/100x153" alt=""></div>
-                        <div class="projectPic"><img src="https://source.unsplash.com/random/100x145" alt=""></div>
+                <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                      <div class="carousel-item active" data-bs-interval="10000">
+                        <img src="../imgs/expense_app.png" class="d-block h-75 m-auto class="rounded" alt="expenseTracker">
+                      </div>
+                      <div class="carousel-item" data-bs-interval="2000">
+                        <img src="../imgs/photo_gallery.png" class="d-block w-100" alt="expenseTracker">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="..." class="d-block w-100" alt="...">
+                      </div>
                     </div>
-                    <div id="prjectNames">
-                        <div class="projectName"><h3>Portfolio</h3></div>
-                        <div class="projectName"><h3>App Two</h3></div>
-                        <div class="projectName"><h3>App Three</h3></div>
-                        <div class="projectName"><h3>App Four</h3></div>
-                        <div class="projectName"><h3>App Five</h3></div>
-                    </div>  
-                    <div id="project">
-                        <div class="projects"><p>This page. A place where future employers or clients can explore what I have to offer.</p></div>
-                        <div class="projects"><p>Sample text here.</p></div>
-                        <div class="projects"><p>Sample text here.</p></div>
-                        <div class="projects"><p>Sample text here.</p></div>
-                        <div class="projects"><p>Sample text here.</p></div>
-                    </div>
-                </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Next</span>
+                    </button>
+                  </div>
                 
 
             </div>
@@ -63,9 +61,15 @@
             </div>
         </div>
     </div>
+    <script>
+        var myCarousel = document.querySelector('#myCarousel')
+        var carousel = new bootstrap.Carousel(myCarousel)
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
     <script src="../js/query.js"></script>
     <script src="../js/tilt.js"></script>
     <script src="../js/main.js"></script>
+
 
 
 </body>

@@ -86,7 +86,7 @@ body {
 }
 
 #mHeading {
-  margin-bottom: 20px;
+  margin:85px 0;
 }
 
 #colorText {
@@ -252,8 +252,29 @@ a:link {
   position: relative;
 }
 
+#profilePic{
+  border-radius: 75px;
+  display: inline;
+  position: absolute;
+  top:-35px;
+  left:40px;
+  
+  z-index: 13;
+  transform: translateZ(280px) perspective(450px);
+}
+
 #paragraph p {
   font-weight: 400;
+}
+
+.carousel-inner > .item > img { width:auto; height:360px; border-radius: 16px; }
+
+#paragraph h1{
+  text-align: center;
+}
+
+#paragraph #hint {
+  text-align: center;
 }
 
 #aboutUs p::selection {
