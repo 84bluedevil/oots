@@ -21,3 +21,5 @@
     $stmt->closeCursor();
 
     $dbh = null;
+
+    header("Location: ../pages/thank_you.php");

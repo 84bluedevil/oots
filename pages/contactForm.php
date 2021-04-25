@@ -1,13 +1,3 @@
-<?php
-//
-//require('../scripts/database.php');
-//$dbh = new DBConnection();
-//$conn = $dbh->getConnection();
-//if($conn == true){
-//    echo 'success!';
-//}
-?>
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
