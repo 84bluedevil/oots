@@ -1,10 +1,8 @@
 <?php
-
 require('scripts/database.php');
 $dbh = new DBConnection();
 $dbh->getConnection();
 ?>
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -22,22 +20,20 @@ $dbh->getConnection();
     <script src='https://api.mapbox.com/mapbox-gl-js/v2.2.0/mapbox-gl.js'></script>
     <link href='https://api.mapbox.com/mapbox-gl-js/v2.2.0/mapbox-gl.css' rel='stylesheet' />
     <link rel="stylesheet" href="css/style.css" />
-    <title>Portfolio</title>
+    <title>Portfolio Home</title>
 </head>
 <body>
     <div id="pageWrapper" class="container-fluid">
-        
+        <!-- Background Video -->     
         <div id="background">
             <video src="imgs/video.mp4#t=10,20,5" preload="metadata" autoplay muted loop></video>
         </div>
-
-</div>
+        <!-- Tilt data is stored in the attributes of the #aboutUs div -->
         <div data-tilt data-tilt-glare data-tilt-max-glare="0.2" data-tilt-reverse="true" data-tilt-scale="1.1" id="aboutUs" class="aboutUs container" data-tilt>
             <header>
                 <ul id="menu">
                     <li class="menuItem"><a class="navBtn" href="#">Home</a></li>
                     <li class="menuItem"><a class="navBtn" href="pages/contactForm.php">Contact</a></li>
-
                     <li class="menuItem"><a class="navBtn" href="pages/contact.html">Projects</a></li>
                     <li class="menuItem"><a class="navBtn" href="pages/tracker.html">Hike History</a></li>
                 </ul>
@@ -59,8 +55,5 @@ $dbh->getConnection();
     <script src="js/query.js"></script>
     <script src="js/tilt.js"></script>
     <script src="js/main.js"></script> 
-
-    
-
 </body>
 </html>
