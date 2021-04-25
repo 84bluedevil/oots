@@ -36,7 +36,6 @@ musicBtn.onclick = function playMusic() {
     const changeColor = () => {
         messageBtn.style.backgroundColor = randomColor();
         musicBtn.style.backgroundColor = randomColor();
-        mainDiv.style.backgroundColor = randomColor();
     }; 
     setInterval(() => {
         changeColor()

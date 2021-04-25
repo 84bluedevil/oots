@@ -22,11 +22,10 @@
     <link href="https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400;0,500;1,700&display=swap" rel="stylesheet" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/style.css">
-    <title>Portfolio</title>
+    <title>Contact Me</title>
 </head>
 <body>
     <div id="pageWrapper">
-        
         <div id="background">
             <video id='backgroundVideo' src="../imgs/video.mp4#t=10,20,5" preload="metadata" autoplay muted loop></video>
         </div>
@@ -40,7 +39,7 @@
                 </ul>
             </header>
             <div id="paragraph" class="columnCenter">
-                <h1 id="mHeading" class="centeredText">Contact Me!</h1>
+                <h1 id="mHeading2" class="centeredText">Contact Me!</h1>
                 <form method="POST" action="../scripts/create.php" >
                     <div class="mb-3">
                         <label for="exampleFormControlInput1" class="form-label">Email address <i id="emailError" class="fas fa-exclamation hide error"></i></label>
@@ -67,7 +66,5 @@
     <script src="../js/query.js"></script>
     <script src="../js/tilt.js"></script>
     <script src="../js/main.js"></script>
-
-
 </body>
 </html>
