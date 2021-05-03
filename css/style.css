@@ -51,7 +51,7 @@ body {
   margin: 10px 0;
   display: flex;
   justify-content: space-between;
-  transform: translateZ(20px) perspective(300px);
+  transform: translateZ(20px);
 }
 
 #mainImg {
@@ -73,7 +73,8 @@ body {
   display: flex;
   justify-content: space-between;
   text-transform: none;
-  transform: translateZ(30px) perspective(250px);
+  transform: translateZ(30px);
+  transform-style: preserve-3d;
 }
 
 .largeText {
@@ -207,6 +208,7 @@ a:link {
   margin: 20px 0 20px 0;
   transform: translateZ(100px) perspective(500px);
   position: relative;
+  
 }
 
 #profilePic{
@@ -231,6 +233,12 @@ a:link {
 
 #paragraph h1{
   text-align: center;
+}
+
+.copyright{
+  text-align: center;
+  position: relative;
+  margin: 25px auto;
 }
 
 #paragraph #hint {

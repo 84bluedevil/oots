@@ -19,7 +19,7 @@
         <div id="background">
             <video id='backgroundVideo' src="../imgs/video.mp4#t=10,20,5" preload="metadata" autoplay muted loop></video>
         </div>
-        <div data-tilt data-tilt-reverse="true" data-tilt-glare data-tilt-max-glare="0.2" data-tilt-scale="1.1" id="aboutUs" class="aboutUs" data-tilt>
+        <div data-tilt data-tilt-reverse="true" data-tilt-max="10" data-tilt-glare data-tilt-max-glare="0.2" data-tilt-scale="1.1" id="aboutUs" class="aboutUs" data-tilt>
             <header>
                 <ul id="menu">
                     <li class="menuItem"><a class="navBtn" href="../index.php">Home</a></li>
@@ -51,6 +51,7 @@
                 <div class="box"><a href="https://www.facebook.com/Austin.Robinsonn" target="_blank"><i class="icon animate__animated fab fa-facebook-square animate__pulse"></i></a></div>
                 <div class="box"><a href="https://github.com/84bluedevil" target="_blank"><i class="icon far fa-envelope animate__animated animate__pulse"></i></a></div>
             </div>
+            <div class="copyright"><p class="copyright">Copyright &copy; 2021.</p></div>
         </div>
     </div>
     <script src="../js/query.js"></script>

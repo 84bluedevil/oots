@@ -1,5 +1,4 @@
 <?php
-
     // Class name and creation
     class DBConnection{
         

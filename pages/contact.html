@@ -19,7 +19,7 @@
       <div id="background">
           <video src="../imgs/video.mp4#t=10,20,5" preload="metadata" autoplay muted loop></video>
       </div>
-      <div id="aboutUs" class="aboutUs" data-tilt>
+      <div id="aboutUs" class="aboutUs" data-tilt data-tilt-max="10" data-tilt-reverse="true" data-tilt-scale="1.0">
           <header>
               <ul id="menu">
                   <li class="menuItem"><a class="navBtn" href="../index.php" >Home</a></li>
@@ -32,7 +32,7 @@
               <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
                   <div class="carousel-inner">
                     <div class="carousel-item active" data-bs-interval="10000">
-                      <img src="../imgs/expense_app.png" class="d-block h-75 m-auto class="rounded" alt="expenseTracker" />
+                      <img src="../imgs/expense_app.png" height="150px" class="d-block h-75 m-auto class="rounded" alt="expenseTracker" />
                     </div>
                     <div class="carousel-item" data-bs-interval="2000">
                       <img src="../imgs/photo_gallery.png" class="d-block w-100" alt="expenseTracker" width="300" />
@@ -56,6 +56,8 @@
               <div class="box"><a href="https://www.facebook.com/Austin.Robinsonn" target="_blank"><i class="animate__animated fab fa-facebook-square animate__pulse"></i></a></div>
               <div class="box"><a href="http://gmail.com" target="_blank"><i class="far fa-envelope animate__animated animate__pulse"></i></a></div>
           </div>
+          <div class="copyright"><p class="copyright">Copyright &copy; 2021.</p></div>
+          
       </div>
     </div>
     <script>
@@ -66,8 +68,5 @@
     <script src="../js/query.js"></script>
     <script src="../js/tilt.js"></script>
     <script src="../js/main.js"></script>
-
-
-
 </body>
 </html>

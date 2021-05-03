@@ -2,21 +2,22 @@ const musicBtn = document.querySelector('#audioBtn');
 const messageBtn = document.querySelector('#msgBtn');
 
 // Div Tilt
-$('document').ready(() => {
+// $('document').ready(() => {
 
-    VanillaTilt.init(document.querySelector(".aboutUs"), {
-        max: 55,
-        speed: 300,
-        glare: true,
-        startY: 90,
-        "max-glare": .70,
-        "glare-prerender": false,
-        scale: 1.25,
-        perspective: 2000,
-        easing: "cubic-bezier(.03,.98,.52,.99)"
-    });
+//     VanillaTilt.init(document.querySelector(".aboutUs"), {
+//         max: 15,
+//         reset: true,
+//         speed: 200,
+//         glare: true,
+//         startY: 25,
+//         "max-glare": .40,
+//         "glare-prerender": false,
+//         scale: 1.25,
+//         perspective: 500,
+//         easing: "cubic-bezier(.03,.98,.52,.99)"
+//     });
 
-});
+// });
 
 //plays sound & changes background refresh to exit
 musicBtn.onclick = function playMusic() {
@@ -58,7 +59,11 @@ musicBtn.onclick = function playMusic() {
             messageError.classList.add('display');
             emailError.classList.add('display');
             messageBtn.classList.add('btn-warning'); 
- 
+            setTimeout(() => {
+                messageError.classList.remove('display');
+                emailError.classList.remove('display');
+                messageBtn.classList.remove('btn-warning'); 
+            }, 5000)
         };
     };
 

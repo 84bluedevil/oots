@@ -29,7 +29,7 @@ $dbh->getConnection();
             <video src="imgs/video.mp4#t=10,20,5" preload="metadata" autoplay muted loop></video>
         </div>
         <!-- Tilt data is stored in the attributes of the #aboutUs div -->
-        <div data-tilt data-tilt-glare data-tilt-max-glare="0.2" data-tilt-reverse="true" data-tilt-scale="1.1" id="aboutUs" class="aboutUs container" data-tilt>
+        <div data-tilt data-tilt-glare data-tilt-max="10" data-tilt-max-glare="0.2" data-tilt-reverse="true" id="aboutUs" class="aboutUs container" data-tilt-scale="1.0" data-tilt>
             <header>
                 <ul id="menu">
                     <li class="menuItem"><a class="navBtn" href="#">Home</a></li>
@@ -49,6 +49,8 @@ $dbh->getConnection();
                 <div class="box"><a href="https://www.facebook.com/Austin.Robinsonn" target="_blank"><i class="animate__animated fab fa-facebook-square animate__pulse"></i></a></div>
                 <div class="box"><a href="https://github.com/84bluedevil" target="_blank"><i class="fab fa-github-square animate__animated animate__pulse"></i></a></div>
             </div>
+            <div class="copyright"><p class="copyright">Copyright &copy; 2021.</p></div>
+            
         </div>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script> 
